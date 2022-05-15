@@ -46,37 +46,26 @@ public class PrimeNumber {
 
 
 
-		// Declare an int Input and assign a value 13
 
-		
-
-		// Declare a boolean variable flag as false
-
-		
-
-		// Iterate from 2 to half of the input
-
-		
-
-			// Divide the input with each for loop variable and check the remainder
-
-			
-
-			// Set the flag as true when there is no remainder
-
-				
-			// break the iterator
-
-
-		// Check the flag (Provide a condition)
-
-		
-
-			// Print 'Prime' when the condition matches
-
-			
-
-			// Print 'Not a Prime' when the condition doesn't match 
+		int n=13;
+		if (isPrime(n)) {  
+           System.out.println(n + " is a prime number");  
+       } else {  
+           System.out.println(n + " is not a prime number");  
+       }  
+   }  
+  
+   public static boolean isPrime(int n) {  
+       if (n <= 1) {  
+           return false;  
+       }  
+       for (int i = 2; i < Math.sqrt(n); i++) {  
+           if (n % i == 0) {  
+               return false;  
+           }  
+       }  
+       return true;  
+   }  
 
    }
 
